@@ -1,0 +1,31 @@
+{
+  "type": "object",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Comment",
+  "additionalProperties": false,
+  "required": [
+    "comment", 
+    "book_id",
+    "user_id"
+  ],
+  "properties": {
+    "id": {
+      "type": "integer"
+    },
+    "book_id": {
+      "type": "number"
+    },
+    "user_id": {
+      "type": "number"
+    },
+    "comment": {
+      "type": "string"
+    },
+    "created_at": {
+      "type": "string"
+    },
+    "updated_at": {
+      "type": "string"
+    }
+  }
+}

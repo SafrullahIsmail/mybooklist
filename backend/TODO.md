@@ -1,0 +1,35 @@
+# how to make an API
+
+- [] create folder for backend
+- [] initialize an NPM `npm init -y`
+- [] install dependencies
+  - [] knex js for ORM
+  - [] mysql for database
+  - [] bcyrpt for hashing password
+  - [] dotenv for loads environment varibles form a `.env`
+  - [] morgan for logger
+  - [] express for make an API
+  - [] compression for returning minim response
+  - [] helmet for secure the response header
+  - [] nodemon -D for monitor any changes in your source and automatically restart your server
+  - [] jest and supertest -D for automation testing
+  - [] objection for model database
+  - [] yup for user validation email, password etc
+- [] initialize an knex `npx knex init`
+- [] set the `knexfile.js` what database are you using and where migration and seed file directory
+- [] make migration `npx knex migrate:make`
+- [] set the migration and run migration `npx knex migrate:latest`
+- [] make seed `npx knex seed:make`
+- [] set the seed and run the seed `npx knex seed:run`
+- [] set express
+  - [] make `index.js` and set the localhost
+  - [] make `app.js` and set middleware, import dependency
+  - [] make middleware for error handling
+  - [] `npx jest --init` and set globalSetup and globalTeardown diractory
+  - [] set jest / supertest `app.test.js`
+  - [] make db connection
+  - [] make api
+    - [] routes
+    - [] tests
+    - [] queries
+  - []
